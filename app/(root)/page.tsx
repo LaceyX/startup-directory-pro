@@ -16,7 +16,7 @@ export default async function Home({
     _id:1,
     description:'This is a description.',
     image:'https://images.unsplash.com/photo-1634912314704-c646c586b131?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0',
-    categry:"Robots",
+    category:"Robots",
     title:"We Robots",
   }]
 
@@ -38,7 +38,7 @@ export default async function Home({
         </p>
       </section>
 
-      <ul className="mt-7 card_grid">
+      <ul className="section_container mt-7 card_grid">
         {posts?.length > 0 ? (
           posts.map((post: StartupCardType) => 
             <StartupCard key={post?._id} post={post} />
