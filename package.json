@@ -11,19 +11,14 @@
     "prebuild": "npm run typegen",
     "typegen": "sanity schema extract --path=./sanity/extract.json && sanity typegen generate"
   },
-  "packageManager": "npm@10.5.2",
-  "overrides": {
-    "react": "$react",
-    "react-dom": "$react-dom",
-    "next": "$next",
-    "@types/react": "19.0.7",
-    "@types/react-dom": "19.0.3"
-  },
   "dependencies": {
+    "@radix-ui/react-avatar": "^1.1.2",
     "@radix-ui/react-slot": "^1.1.1",
     "@radix-ui/react-toast": "^1.2.4",
     "@sanity/image-url": "^1.1.0",
     "@sanity/vision": "^3.70.0",
+    "@sentry/nextjs": "^8",
+    "@sentry/vercel-edge": "^8.51.0",
     "@tailwindcss/typography": "^0.5.16",
     "@uiw/react-md-editor": "^4.0.5",
     "class-variance-authority": "^0.7.1",
